@@ -23,9 +23,9 @@ void GameManager::play()
     int points, difficulty;
     char choose;
 
-   // Field_.setWidth(36);
-   //Field_.setLength(150);
-
+    //using these setter you can change the field size without changing the default constructor
+    //Field_.setWidth(36);
+    //Field_.setLength(150);
 
     Right.setSize_paddle(7);
     Right.setX(Field_.getLength()-5);
@@ -36,8 +36,6 @@ void GameManager::play()
     Left.setX(4);
     Left.setY((Field_.getWidth() - 6) / 2);
     Left.setDirection(0);
-
-
 
     cout << "Enter name of the game" << endl;
     getline(cin, name);
